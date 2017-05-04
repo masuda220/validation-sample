@@ -9,9 +9,9 @@ public class Age {
     @Min(value=18,message = "１８歳以上")
     int age;
 
-//    public Age(String age) {
-//        this.age = Integer.valueOf(age);
-//    }
+    public Age(String age) {
+        this.age = Integer.valueOf(age);
+    }
 
     public int getAge() {
         return age;
