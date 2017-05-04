@@ -7,7 +7,7 @@ public class Age {
 
     @NotNull
     @Min(value=18,message = "１８歳以上")
-    Integer age;
+    int age;
 
     public Age(String age) {
         this.age = Integer.valueOf(age);
