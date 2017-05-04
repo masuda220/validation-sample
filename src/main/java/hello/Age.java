@@ -13,4 +13,7 @@ public class Age {
         this.age = Integer.valueOf(age);
     }
 
+    public Age() {
+        ;
+    }
 }
