@@ -1,5 +1,7 @@
 package hello;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.validation.Valid;
 
 import javax.validation.constraints.NotNull;
@@ -7,7 +9,7 @@ import javax.validation.constraints.Size;
 
 public class PersonForm {
 
-    @NotNull
+    @NotEmpty(message = "必須")
     @Size(min=2, max=30, message = "{min}以上 {max}以下")
     private String name;
 
