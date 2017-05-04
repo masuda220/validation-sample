@@ -12,6 +12,6 @@ public class Advice {
     public void initBinder(WebDataBinder binder) {
         binder.initDirectFieldAccess();
 
-        binder.registerCustomEditor(Object.class, new StringTrimmerEditor(false));
+        binder.registerCustomEditor(String.class, new StringTrimmerEditor(false));
     }
 }
