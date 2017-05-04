@@ -10,7 +10,7 @@ import javax.validation.constraints.Size;
 public class PersonForm {
 
     @NotEmpty(message = "必須")
-    @Size(min=2, max=30, message = "{min}以上 {max}以下")
+    @Size(min=2, max=30, message = "以上 以下")
     private String name;
 
     @Valid
