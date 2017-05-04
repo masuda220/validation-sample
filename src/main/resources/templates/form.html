@@ -9,7 +9,7 @@
                 </tr>
                 <tr>
                     <td>Age:</td>
-                    <td><input type="text" th:field="*{age.age}" /></td>
+                    <td><input type="text" th:field="*{age}" /></td>
                     <td th:if="${#fields.hasErrors('age*')}" th:errors="*{age.age}">Age Error</td>
                 </tr>
                 <tr>
