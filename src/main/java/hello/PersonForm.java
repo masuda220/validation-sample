@@ -11,9 +11,6 @@ public class PersonForm {
     @Size(min=2, max=30, message = "{min}以上 {max}以下")
     private String name;
 
-    @NotNull
-    @Min(value=18,message = "１８歳以上")
-    int age;
 
     public String getName() {
         return name;
@@ -23,13 +20,27 @@ public class PersonForm {
         this.name = name;
     }
 
-    public int getAge() {
+    @Valid
+    Age age;
+
+    public Age getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Age age) {
         this.age = age;
     }
+    //    @NotNull
+//    @Min(value=18,message = "１８歳以上")
+//    int age;
+//
+//    public int getAge() {
+//        return age;
+//    }
+//
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
 
     //    public Age getAge() {
 //        return age;
