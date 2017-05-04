@@ -16,4 +16,9 @@ public class Age {
     public Age() {
         ;
     }
+
+    @Override
+    public String toString() {
+        return "/" + age + "/";
+    }
 }
