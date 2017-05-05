@@ -12,8 +12,7 @@ public class PersonForm {
     @NotEmpty(message = "必須")
     @Size(min=2, max=30, message = "以上 以下")
     private String name;
-
-    @NotNull(message = "年齢必須")
+    
     @Valid
     Age age;
 
