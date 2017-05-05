@@ -16,6 +16,9 @@ public class PersonForm {
     @Valid
     Age age;
 
+    @Valid
+    DateOfBirth dateOfBirth;
+
     @Override
     public String toString() {
         return "PersonForm{" +
@@ -25,7 +28,5 @@ public class PersonForm {
                 '}';
     }
 
-    @Valid
-    DateOfBirth dateOfBirth;
 
 }
