@@ -16,6 +16,9 @@ public class PersonForm {
     @Valid
     Age age;
 
+    @Valid
+    DateOfBirth dateOfBirth;
+
     public String toString() {
         return "Person(Name: " + this.name + ", Age: " + this.age + ")";
     }

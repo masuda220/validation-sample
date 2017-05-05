@@ -12,6 +12,13 @@
                     <td><input type="text" th:field="*{age.age}" /></td>
                     <td th:if="${#fields.hasErrors('age*')}" th:errors="*{age.age}">Age Error</td>
                 </tr>
+
+                <tr>
+                    <td>DateOfBirth:</td>
+                    <td><input type="text" th:field="*{dateOfBirth.date}" /></td>
+                    <td th:if="${#fields.hasErrors('dateOfBirth*')}" th:errors="*{dateOfBirth.date}">DateOfBirth Error</td>
+                </tr>
+
                 <tr>
                     <td><button type="submit">Submit</button></td>
                 </tr>
