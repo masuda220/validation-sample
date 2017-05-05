@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 
 public class Age {
 
-	@NotNull
+	@NotNull(message = "必須")
     @Min(value=18,message = "１８歳以上")
     Integer age;
 
