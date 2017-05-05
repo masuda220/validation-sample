@@ -10,4 +10,9 @@ public class DateOfBirth {
 	@NotNull(message="必須")
 	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
 	LocalDate date ;
+
+	@Override
+	public String toString() {
+		return date.toString();
+	}
 }
