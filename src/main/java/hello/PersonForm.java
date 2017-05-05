@@ -16,10 +16,16 @@ public class PersonForm {
     @Valid
     Age age;
 
+    @Override
+    public String toString() {
+        return "PersonForm{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
+    }
+
     @Valid
     DateOfBirth dateOfBirth;
 
-    public String toString() {
-        return "Person(Name: " + this.name + ", Age: " + this.age + ")";
-    }
 }
