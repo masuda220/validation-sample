@@ -13,6 +13,7 @@ public class DateOfBirth {
 
 	@Override
 	public String toString() {
+		if(date==null) return "";
 		return date.toString();
 	}
 }

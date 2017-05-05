@@ -12,6 +12,7 @@ public class Age {
 
 	@Override
 	public String toString() {
+		if(age==null) return "";
 		return age.toString()+"歳";
 	}
 }
